@@ -105,8 +105,11 @@ http://localhost:8000/_securescan
 ---
 
 ## 🖥️ Dashboard Preview
+<img width="1258" height="624" alt="image" src="https://github.com/user-attachments/assets/f211c83c-08d2-4669-a15d-f2fd792ad549" />
+
 
 ### CLI Output
+<img width="566" height="428" alt="image" src="https://github.com/user-attachments/assets/ce8e0f12-3fb0-41f7-8e4f-9f10a0df1a50" />
 
 
 ### Web Dashboard
