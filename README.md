@@ -11,7 +11,7 @@
 
 **Laravel SecureScan** is a powerful security analysis tool for Laravel applications.
 
-🔥 Real-time Laravel security scanner with live dashboard (no queue required)
+##🔥 Real-time Laravel security scanner with live dashboard (no queue required)
 
 It scans your codebase to detect:
 
