@@ -1,0 +1,53 @@
+{
+    "name": "dhanikkeraliya/laravel-securescan",
+    "description": "A powerful security scanner for Laravel applications with CLI and web dashboard support to detect vulnerabilities like SQL Injection, XSS, secrets, and misconfigurations.",
+    "keywords": [
+        "laravel",
+        "security",
+        "scanner",
+        "vulnerability",
+        "php",
+        "xss",
+        "sql-injection",
+        "code-analysis"
+    ],
+    "homepage": "https://github.com/dhanikkeraliya/laravel-securescan",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Dhanik Keraliya",
+            "email": "dhanikkkeraliya@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+
+    "require": {
+        "php": "^8.1",
+        "illuminate/console": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "DhanikKeraliya\\SecurityScanner\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "DhanikKeraliya\\SecurityScanner\\Tests\\": "tests/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DhanikKeraliya\\SecurityScanner\\SecurityScannerServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
