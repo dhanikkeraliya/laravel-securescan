@@ -11,6 +11,8 @@
 
 **Laravel SecureScan** is a powerful security analysis tool for Laravel applications.
 
+🔥 Real-time Laravel security scanner with live dashboard (no queue required)
+
 It scans your codebase to detect:
 
 * 🔴 Critical vulnerabilities (SQL Injection, XSS, Secrets)
@@ -101,6 +103,92 @@ php artisan security:scan
 ```bash
 http://localhost:8000/_securescan
 ```
+## 🚫 Ignore Rules (`.securescan-ignore`)
+
+Laravel SecureScan allows you to ignore specific files, patterns, or rules using a `.securescan-ignore` file placed in the **project root**.
+
+This helps reduce noise and avoid false positives in your scans.
+
+---
+
+### 📄 Example
+
+Create a file:
+
+```bash
+.securescan-ignore
+```
+
+Add rules like:
+
+```bash
+# Ignore specific files
+app/Models/Test.php
+
+# Ignore by pattern
+*/Seeder.php
+
+# Ignore by rule
+SQL Injection
+XSS
+```
+
+---
+
+### 🔍 Supported Ignore Types
+
+#### 1. Ignore Specific File
+
+```bash
+app/Models/Test.php
+```
+
+#### 2. Ignore by Pattern
+
+```bash
+*/Seeder.php
+```
+
+#### 3. Ignore by Rule Type
+
+```bash
+SQL Injection
+XSS
+```
+
+---
+
+### ⚙️ Usage
+
+Run scan with ignore rules enabled:
+
+```bash
+php artisan security:scan --ignore
+```
+
+---
+
+### ⚠️ Important Notes
+
+* Ignore rules are applied **after scan results are generated**
+* Rule matching is based on:
+
+  * File path
+  * Finding type (e.g., SQL Injection)
+* Keep rules minimal to avoid hiding real vulnerabilities
+
+---
+
+### 💡 Best Practice
+
+Use ignore rules only when:
+
+* You have verified a false positive
+* The issue is intentionally handled in your code
+
+Avoid blindly ignoring critical issues.
+
+---
 
 ---
 
@@ -112,7 +200,17 @@ http://localhost:8000/_securescan
 <img width="566" height="428" alt="image" src="https://github.com/user-attachments/assets/ce8e0f12-3fb0-41f7-8e4f-9f10a0df1a50" />
 
 
-### Web Dashboard
+## Why SecureScan?
+
+Most Laravel security tools:
+- Only scan dependencies ❌
+- No UI ❌
+- No real-time feedback ❌
+
+SecureScan provides:
+- Code-level scanning ✅
+- Real-time dashboard ✅
+- Developer-friendly output ✅
 
 ---
 
