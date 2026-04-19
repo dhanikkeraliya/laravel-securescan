@@ -214,24 +214,6 @@ SecureScan provides:
 
 ---
 
-## ⚠️ Security Notice
-
-This package is intended for **development and internal use only**.
-
-Do NOT expose the dashboard publicly without authentication.
-
----
-
-## 📌 Roadmap
-
-* [ ] Real-time WebSocket scanning
-* [ ] CI/CD integration
-* [ ] Scan history & reports
-* [ ] Export (PDF/JSON)
-* [ ] SaaS dashboard
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
